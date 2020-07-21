@@ -1,24 +1,24 @@
 #include "../include/Utilities.h"
 
 int mainLoop (SDL_Renderer* renderer) {
-    string minefieldBtnNames[] = {  "Resources/field/empty.png",
-                                    "Resources/field/1.png",
-                                    "Resources/field/2.png",
-                                    "Resources/field/3.png",
-                                    "Resources/field/4.png",
-                                    "Resources/field/5.png",
-                                    "Resources/field/6.png",
-                                    "Resources/field/7.png",
-                                    "Resources/field/8.png",
-                                    "Resources/field/9.png",
-                                    "Resources/field/button.png",
-                                    "Resources/field/flag.png",
-                                    "Resources/field/mine.png",
-                                    "Resources/field/field.png",
-                                    "Resources/field/empty.png"};
-    string resetBtnNames[] = {      "Resources/reset/normal.png",
-                                    "Resources/reset/loose.png",
-                                    "Resources/reset/win.png"};
+    string minefieldBtnNames[] = {  "resources/field/empty.png",
+                                    "resources/field/1.png",
+                                    "resources/field/2.png",
+                                    "resources/field/3.png",
+                                    "resources/field/4.png",
+                                    "resources/field/5.png",
+                                    "resources/field/6.png",
+                                    "resources/field/7.png",
+                                    "resources/field/8.png",
+                                    "resources/field/9.png",
+                                    "resources/field/button.png",
+                                    "resources/field/flag.png",
+                                    "resources/field/mine.png",
+                                    "resources/field/field.png",
+                                    "resources/field/empty.png"};
+    string resetBtnNames[] = {      "resources/reset/normal.png",
+                                    "resources/reset/loose.png",
+                                    "resources/reset/win.png"};
     SDL_Texture** minefieldBtnTextures = loadTextures(renderer, 15, minefieldBtnNames);
     SDL_Texture** resetBtnTextures = loadTextures(renderer, 4, resetBtnNames);
     Minefield* map = new Minefield (renderer, 10, 10, 15, minefieldBtnTextures);

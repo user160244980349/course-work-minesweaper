@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
         return -1;
     }
 
-    SDL_Surface* icon = IMG_Load("Resources/icon/icon.png");
+    SDL_Surface* icon = IMG_Load("resources/icon/icon.png");
     SDL_SetWindowIcon(window, icon);
     renderer = SDL_CreateRenderer (window, 1, 0);
     if (renderer == NULL) {
